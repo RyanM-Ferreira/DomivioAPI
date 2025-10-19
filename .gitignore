@@ -1,5 +1,8 @@
-# Desgraça
+# NODE_MODULES: o caos modular # Aqui vive toda a bagunça que você nunca quer ver no Git.
 /node_modules
 
-# Depois, tem que tirar o .ENV, mas vou deixar por enquanto
+# CONFIGURAÇÕES LOCAIS E IDE # Config do VSCode: só pro teu conforto, nada pra Git.
+/.vscode 
+
+# VARIÁVEIS DE AMBIENTE # Deixe seus segredos longe dos olhos curiosos do Git. Futuramente, 'descomente' isso.
 # .env

@@ -30,3 +30,15 @@ export const createUser = async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 };
+
+// DELETE USER by ID
+export const deleteUserById = async (req, res) => {
+    try {
+        const user = await User.findByPk(req.params.id);
+        if (!user) return res.status(404).json({ error: "User not found" });
+        await user.destroy();
+        res.json({ message: `User ${user} deleted successfully` });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+};

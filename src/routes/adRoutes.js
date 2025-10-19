@@ -1,10 +1,11 @@
 import express from "express";
-import { getAllAds, getAdById, createAd } from "../controllers/adController.js";
+import { getAllAds, getAdById, createAd, deleteAdById } from "../controllers/adController.js";
 
 const router = express.Router();
 
 router.get("/", getAllAds);
 router.get("/:id", getAdById);
 router.post("/", createAd);
+router.delete("/:id", deleteAdById);
 
 export default router;

@@ -17,6 +17,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    console.log("Welcome to Domivio API");
+    res.send("Welcome to Domivio API");
+});
+
 app.use("/users", userRoutes);
 app.use("/ads", adRoutes);
 
