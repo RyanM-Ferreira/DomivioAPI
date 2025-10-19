@@ -1,0 +1,5 @@
+# Desgraça
+/node_modules
+
+# Depois, tem que tirar o .ENV, mas vou deixar por enquanto
+# .env
