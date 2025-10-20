@@ -5,4 +5,4 @@
 /.vscode 
 
 # VARIÁVEIS DE AMBIENTE # Deixe seus segredos longe dos olhos curiosos do Git. Futuramente, 'descomente' isso.
-# .env
+.env
