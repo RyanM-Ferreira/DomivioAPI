@@ -39,13 +39,14 @@ export const createChat = async (req, res) => {
 
         if (!chat) {
             chat = await Chat.create({ user1ID, user2ID });
-        }
-        else{
-            return res.status(400).json({ error: "Chat between these users already exists" });
-            alert("Chat between these users already exists");
+            return res.status(201).json(chat);
         }
 
-        res.status(201).json(chat);
+        return res.status(400).json({
+            error: `Chat between these users already exists (chat ID: ${chat.chatID})`,
+            chatID: chat.chatID,
+        });
+
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
