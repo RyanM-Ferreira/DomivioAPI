@@ -25,7 +25,7 @@ app.use("/chats", chatRoutes);
 app.use("/messages", messageRoutes);
 
 app.get("/", (req, res) => {
-    console.log("Welcome to Domivio API.\n\nIt's dangerous to go alone! Take this.");
+    console.log("Welcome to Domivio API.\nIt's dangerous to go alone! Take this.\n");
 
     res.send(`
   <div style="

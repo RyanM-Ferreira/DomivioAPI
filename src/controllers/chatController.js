@@ -32,7 +32,18 @@ export const getChatById = async (req, res) => {
 export const createChat = async (req, res) => {
     try {
         const { user1ID, user2ID } = req.body;
-        const chat = await Chat.create({ user1ID, user2ID });
+
+        let chat = await Chat.findOne({
+            where: { user1ID, user2ID },
+        });
+
+        if (!chat) {
+            chat = await Chat.create({ user1ID, user2ID });
+        }
+        else{
+            return res.status(400).json({ error: "Chat between these users already exists" });
+            alert("Chat between these users already exists");
+        }
 
         res.status(201).json(chat);
     } catch (err) {
