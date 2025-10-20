@@ -1,6 +1,8 @@
 import sequelize from "./db.js";
 import "./models/user.js";
 import "./models/ad.js";
+import "./models/chat.js";
+import "./models/message.js";
 
 (async () => {
   try {

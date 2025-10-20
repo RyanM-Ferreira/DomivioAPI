@@ -33,6 +33,7 @@ const User = sequelize.define("User", {
   },
   birthday: {
     type: DataTypes.DATE,
+    timestamps: false
   }
 }, {
   tableName: "users",
