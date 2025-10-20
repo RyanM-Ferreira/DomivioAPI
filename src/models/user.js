@@ -32,7 +32,7 @@ const User = sequelize.define("User", {
     allowNull: false
   },
   birthday: {
-    type: DataTypes.DATE,
+    type: DataTypes.DATEONLY,
     timestamps: false
   }
 }, {
