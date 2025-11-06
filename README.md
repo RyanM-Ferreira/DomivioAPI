@@ -3,6 +3,7 @@
 Bem-vindo à **Domivio API**.
 
 Este é o backend responsável por alimentar o aplicativo Domivio, um sistema criado para conectar compradores e vendedores de imóveis sem a necessidade de intermediadores.  
+
 A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de dados.
 
 ---
