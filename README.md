@@ -3,7 +3,7 @@
 Bem-vindo à **Domivio API**.
 
 Este é o backend responsável por alimentar o aplicativo Domivio, um sistema criado para conectar compradores e vendedores de imóveis sem a necessidade de intermediadores.  
-A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de dados principal.
+A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de dados.
 
 ---
 
@@ -13,7 +13,6 @@ A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de 
 > - Express  
 > - PostgreSQL  
 > - Sequelize  
-> - CORS  
 
 ---
 
@@ -22,10 +21,10 @@ A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de 
 > **Endpoints disponíveis para interação com a API:**
 >
 > ```
-> /users      → Gerenciamento de usuários (cadastro, login, listagem)
-> /ads        → CRUD de imóveis (criação, listagem, atualização e exclusão)
-> /chats      → Criação e listagem de conversas
-> /messages   → Envio e recebimento de mensagens
+> /users      -> Gerenciamento de usuários (cadastro, login, listagem)
+> /ads        -> Gerenciamento de imóveis (criação, listagem)
+> /chats      -> Criação e listagem de conversas
+> /messages   -> Envio e recebimento de mensagens (separado por ChatID)
 > ```
 
 ---
@@ -53,7 +52,7 @@ API hospedada em:
 
 ## Créditos
 
-> **Back-end e arquitetura:**  
+> **Back-end e estrutura:**  
 > Ryan Ferreira – [github.com/RyanM-Ferreira](https://github.com/RyanM-Ferreira)  
 >
 > **Integração e suporte ao front-end:**  
