@@ -31,8 +31,7 @@ A API foi construída em Node.js com Express e utiliza PostgreSQL como banco de 
 
 ## Estrutura
 
-A API segue o padrão REST, retornando dados em formato JSON e integrando-se ao cliente por meio do Axios.  
-Todas as rotas principais exigem autenticação, exceto o cadastro e o login.
+A API segue o padrão REST, retornando dados em formato JSON e integrando-se ao cliente por meio do Axios.
 
 ---
 
