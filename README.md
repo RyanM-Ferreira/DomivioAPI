@@ -45,15 +45,15 @@ API hospedada em:
 
 ## Repositórios relacionados
 
-> **Frontend (mobile):**  
+> **Front-end:**  
 > [DomivioClient](https://github.com/RyanM-Ferreira/DomivioClient)
 
 ---
 
 ## Créditos
 
-> **Back-end e estrutura:**  
+> **Estrutura geral e Back-end:**  
 > Ryan Ferreira – [github.com/RyanM-Ferreira](https://github.com/RyanM-Ferreira)  
 >
-> **Integração e suporte ao front-end:**  
+> **Front-end e integração com a API:**  
 > Arthur Martin – [github.com/arthur1105](https://github.com/arthur1105)
